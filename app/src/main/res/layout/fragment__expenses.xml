@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Fragment_Expenses">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/expenses_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="end">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Wallet"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_gravity="start"
+                android:layout_marginTop="48dp"
+                android:layout_marginStart="17dp"
+                android:textStyle="bold"/>
+
+
+            <ImageView
+                android:id="@+id/expenses_menu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:outlineProvider="background"
+                android:clipToOutline="true"
+                android:layout_gravity="end"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/round_corner"
+                android:backgroundTint="@color/Apricot"
+                android:src="@drawable/menu" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/monthlyIncome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="17dp"
+                        android:text="Your monthly income"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layoutMonthlyBudget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="17dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/addMBudget">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/monthlyBudget"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintHeight_max="500dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <Button
+                        android:id="@+id/addMBudget"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="17dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="15sp"
+                        android:text="Add more"
+                        android:textAllCaps="false"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"
+                        app:elevation="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/monthlyIncome"/>
+
+                    <TextView
+                        android:id="@+id/extraIncome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/layoutMonthlyBudget"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Your extra income"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layoutExtraBudget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="17dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/extraIncome">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/extraMoney"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintHeight_max="500dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <Button
+                        android:id="@+id/addMExtra"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="17dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="15sp"
+                        android:text="Add more"
+                        android:textAllCaps="false"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"
+                        app:elevation="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/layoutExtraBudget"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_below="@+id/addMExtra"/>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </FrameLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/expense_naviagtionView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/Apricot"
+            android:layout_gravity="end"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/header_expenses"
+            app:menu="@menu/expenses_menu"
+            />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</FrameLayout>

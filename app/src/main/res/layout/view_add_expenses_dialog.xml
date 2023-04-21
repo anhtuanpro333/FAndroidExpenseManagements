@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/round_corner">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/expand"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:tint="@color/Crimson"
+        android:src="@drawable/expand" />
+
+    <EditText
+        android:id="@+id/et_nameExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="17dp"
+        android:background="@null"
+        android:hint="The Expense's Name"
+        android:paddingStart="17dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_dayExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableRight="@drawable/baseline_calendar_today_24"
+        android:layout_below="@+id/et_nameExpenses"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="17dp"
+        android:background="@null"
+        android:hint="The Expense's Day"
+        android:paddingStart="17dp"
+        android:paddingEnd="17dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_moneyExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:layout_below="@+id/et_dayExpenses"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="17dp"
+        android:background="@null"
+        android:hint="The Expense's Money"
+        android:paddingStart="17dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_addExpense"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/et_moneyExpenses"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="17dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="Add your Expense"
+        android:backgroundTint="@color/Coral"/>
+
+</RelativeLayout>

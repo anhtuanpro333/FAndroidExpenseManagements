@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_corner">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="15dp">
+
+        <RelativeLayout
+            android:id="@+id/budget_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corner"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="ID:"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/budget_userId"
+                android:layout_width="150dp"
+                android:layout_height="27dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="29dp"
+                android:layout_toEndOf="@+id/id"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_black"
+                android:text="XndfhcD514512155451212544523"
+                android:textAllCaps="true"
+                android:textColor="@color/Coral"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/budget_logo"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/budget_headerMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_below="@id/id"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/prata"
+                android:text="Your Income"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/budget_Money"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_below="@id/budget_headerMoney"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/prata"
+                android:text="$ 215.254.215.512"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/budget_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_below="@id/budget_Money"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/prata"
+                android:text="Web design"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_toEndOf="@id/budget_Name"
+                android:layout_below="@id/budget_Money"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/prata"
+                android:text="from"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/budget_place"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_toEndOf="@id/from"
+                android:layout_below="@id/budget_Money"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/prata"
+                android:text="Upload"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Fragment_Chart">
+
+
+    <View
+        android:layout_width="805dp"
+        android:layout_height="456dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-215dp"
+        android:layout_marginRight="-100dp"
+        android:background="@drawable/round_solid_coral"
+        android:rotation="4" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:menu="@menu/chart_menu">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/logo_white" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="340dp"
+            android:layout_height="170dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="@color/Apricot"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/baselineMonday"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:backgroundTint="@color/DarkGrey"/>
+
+                <View
+                    android:id="@+id/baselineTuesday"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/baselineMonday"
+                    android:backgroundTint="@color/DarkGrey"/>
+
+                <View
+                    android:id="@+id/baselineWednesday"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/baselineTuesday"
+                    android:backgroundTint="@color/DarkGrey"/>
+
+                <View
+                    android:id="@+id/baselineThursday"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/baselineWednesday"
+                    android:backgroundTint="@color/DarkGrey"/>
+
+                <View
+                    android:id="@+id/baselineFriday"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/baselineThursday"
+                    android:backgroundTint="@color/DarkGrey"/>
+
+                <View
+                    android:id="@+id/baselineSaturday"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/baselineFriday"
+                    android:backgroundTint="@color/DarkGrey"/>
+
+                <View
+                    android:id="@+id/baselineSunday"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/baselineSaturday"
+                    android:backgroundTint="@color/DarkGrey"/>
+
+                <View
+                    android:id="@+id/lineMonday"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignBottom="@id/baselineMonday"
+                    android:backgroundTint="@color/Crimson"/>
+
+                <View
+                    android:id="@+id/lineTuesday"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignBottom="@id/baselineTuesday"
+                    android:layout_toEndOf="@+id/baselineMonday"
+                    android:backgroundTint="@color/Crimson"/>
+
+                <View
+                    android:id="@+id/lineWednesday"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignBottom="@id/baselineWednesday"
+                    android:layout_toEndOf="@+id/baselineTuesday"
+                    android:backgroundTint="@color/Crimson"/>
+
+                <View
+                    android:id="@+id/lineThursday"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignBottom="@id/baselineThursday"
+                    android:layout_toEndOf="@+id/baselineWednesday"
+                    android:backgroundTint="@color/Crimson"/>
+
+                <View
+                    android:id="@+id/lineFriday"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignBottom="@id/baselineFriday"
+                    android:layout_toEndOf="@+id/baselineThursday"
+                    android:backgroundTint="@color/Crimson"/>
+
+                <View
+                    android:id="@+id/lineSaturday"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignBottom="@id/baselineSaturday"
+                    android:layout_toEndOf="@+id/baselineFriday"
+                    android:backgroundTint="@color/Crimson"/>
+
+                <View
+                    android:id="@+id/lineSunday"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignBottom="@id/baselineSunday"
+                    android:layout_toEndOf="@+id/baselineSaturday"
+                    android:backgroundTint="@color/Crimson"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/baselineMonday"
+                    android:layout_alignStart="@+id/baselineMonday"
+                    android:layout_alignEnd="@id/baselineSunday"
+                    android:paddingEnd="-10dp"
+                    android:layout_marginStart="-5dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="11dp"
+                        android:text="Mon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="13dp"
+                        android:text="Tue"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="10dp"
+                        android:text="Wed"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="12dp"
+                        android:text="Thur"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="17dp"
+                        android:text="Fri"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="12dp"
+                        android:text="Sat"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="11dp"
+                        android:text="Sun"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/baselineMonday"
+                    android:layout_alignStart="@+id/baselineMonday"
+                    android:layout_alignEnd="@id/baselineSunday"
+                    android:paddingEnd="-10dp"
+                    android:layout_marginStart="-5dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="11dp"
+                        android:text="Mon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="13dp"
+                        android:text="Tue"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="10dp"
+                        android:text="Wed"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="12dp"
+                        android:text="Thur"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="17dp"
+                        android:text="Fri"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="12dp"
+                        android:text="Sat"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="11dp"
+                        android:text="Sun"/>
+
+                </LinearLayout>
+
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/chart_ViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/baselineSunday" />
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/lineearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardView"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingStart="13dp"
+            android:paddingEnd="13dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Daily Budget"
+                    android:textColor="@color/DarkGrey"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/chart_DailyBudget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="$ 100.000.000"
+                    android:textColor="@color/DarkGrey"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/chart_DayButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:textSize="12sp"
+                    android:text="D"
+                    android:textColor="@color/Crimson"
+                    android:gravity="center"
+                    android:background="@drawable/round_corner_grey"/>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/chart_WeekButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:textSize="12sp"
+                    android:text="W"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:background="@drawable/round_corner_grey"/>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/chart_MonthButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:textSize="12sp"
+                    android:text="M"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:background="@drawable/round_corner_grey"/>
+
+
+            </LinearLayout>
+            
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/Crimson"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chart_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lineearLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:paddingStart="17dp"
+            android:paddingEnd="17dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/exportBalancer"
+            android:icon="@drawable/excel_icon"
+            android:title="Export Balance"/>
+
+        <item
+            android:id="@+id/addMultyBudge"
+            android:icon="@drawable/multybudge"
+            android:title="Add multiple budges"/>
+
+        <item
+            android:id="@+id/addMultyExpenses"
+            android:icon="@drawable/multyexpense"
+            android:title="Add multiple expenses"/>
+
+        <item
+            android:id="@+id/changeSavingRule"
+            android:icon="@drawable/savingrule"
+            android:title="Change saving rule"/>
+
+        <item
+            android:id="@+id/deleteExtra"
+            android:icon="@drawable/extraincome_icon"
+            android:title="Delete all extra income"/>
+
+        <item
+            android:id="@+id/deleteMonthly"
+            android:icon="@drawable/monthlyincome_icon"
+            android:title="Delete all monthly income"/>
+
+        <item
+            android:id="@+id/deleteAll"
+            android:icon="@drawable/trashcan_icon"
+            android:title="Delete all"/>
+
+    </group>
+
+</menu>

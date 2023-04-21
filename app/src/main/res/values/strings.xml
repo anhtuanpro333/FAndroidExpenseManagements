@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FAndroidExpenseManagements</string>
+    <string name="title_activity_sign_up">SignUp</string>
+
+    <string name="signin_header">Sign In</string>
+    <string name="signup_header">Sign Up</string>
+    <string name="signin_confirm">Log In</string>
+    <string name="signup_confirm">Create Account</string>
+    <string name="email_input">Email</string>
+    <string name="password_input">Password</string>
+    <string name="get_verify_code">Send Code</string>
+    <string name="title_activity_login">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

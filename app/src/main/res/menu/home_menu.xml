@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_menu"
+        android:title="menu"
+        android:icon="@drawable/menu_icon"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/deletedAllExpenses"
+                android:title="Delete All expenses"
+                android:icon="@drawable/trashcan_icon"></item>
+
+            <item
+                android:id="@+id/changeMonthInCome"
+                android:title="Change month income"
+                android:icon="@drawable/money_icon"></item>
+
+            <item
+                android:id="@+id/changeExpenses"
+                android:title="Change multiple expenses"
+                android:icon="@drawable/expenses_icon"></item>
+
+            <item
+                android:id="@+id/exportExcel"
+                android:title="Export Excel"
+                android:icon="@drawable/excel_icon">
+
+                <menu>
+
+                    <item
+                        android:id="@+id/days"
+                        android:title="Days"></item>
+
+                    <item
+                        android:id="@+id/weeks"
+                        android:title="Weeks"></item>
+
+                    <item
+                        android:id="@+id/months"
+                        android:title="Months"></item>
+
+                </menu>
+
+            </item>
+
+        </menu>
+
+    </item>
+
+</menu>

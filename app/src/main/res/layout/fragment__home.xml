@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Apricot"
+    tools:context=".Fragments.Fragment_Home">
+
+    <View
+        android:layout_width="805dp"
+        android:layout_height="456dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-215dp"
+        android:layout_marginRight="-100dp"
+        android:background="@drawable/round_solid_coral"
+        android:rotation="4" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        app:menu="@menu/home_menu">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:text="Today has use:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/home_todayUse"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="200 billion $"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="70dp"
+        android:text="Equal:"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/todayPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="70dp"
+        android:text="100%"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="70dp"
+        android:text="Condition:"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/todayCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="70dp"
+        android:text="Good"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="17dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/myCardView"
+            android:layout_width="260dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="@color/Peach"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="Your Balance"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/yourBalance"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="$ 200.000.000.000"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/yourBalance"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="Monthly Income:"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/monthIncome"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/yourBalance"
+                    android:layout_toEndOf="@+id/textview2"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="$ 125.254.143"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="Extra Money:"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/extraMoney"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/monthIncome"
+                    android:layout_toEndOf="@+id/textview2"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="$ 12.254.143"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview3"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="Extra Money:"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/monthlyExpenses"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/extraMoney"
+                    android:layout_toEndOf="@+id/textview2"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="$ 2.254.143"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview4"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="Expenses:"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/expenses"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/monthlyExpenses"
+                    android:layout_toEndOf="@+id/textview2"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="12"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/dash"
+                    android:layout_width="130dp"
+                    android:layout_height="1dp"
+                    android:background="@color/black"
+                    android:layout_below="@id/textview5"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:id="@+id/textview6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/dash"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="Total Expenses:"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalExpenses"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/dash"
+                    android:layout_toEndOf="@+id/textview2"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="$ 12.452.154"
+                    android:textColor="@color/black"
+                    android:textSize="6sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/homdeTabLayout"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/myCardView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/Apricot"
+            android:contentDescription="Expenses's Time" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_Recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/homdeTabLayout"
+            android:paddingTop="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="110dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/home_empty_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:text="Great ! You didn’t even usse a penny."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.Navigation">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/navigate_pagers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addExpense"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/Coral"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        app:fabCustomSize="60dp"
+        app:tint="@color/white"
+        android:src="@drawable/baseline_add_24"
+        android:contentDescription="Add expenses"/>
+
+    <RelativeLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/navigation"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/home_navigate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="20dp"
+            android:layout_marginStart="17dp"
+            android:src="@drawable/home_icon"
+            app:tint="@color/black"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/chart_navigate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="18dp"
+            android:layout_marginStart="17dp"
+            android:layout_toEndOf="@+id/home_navigate"
+            android:src="@drawable/chart_icon"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/expenses_navigate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="18dp"
+            android:layout_marginEnd="17dp"
+            android:layout_toStartOf="@+id/user_navigate"
+            android:backgroundTint="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wallet_icon" />
+
+        <ImageButton
+            android:id="@+id/user_navigate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="18dp"
+            android:layout_marginEnd="17dp"
+            android:src="@drawable/user_icon"
+            android:scaleType="centerCrop"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

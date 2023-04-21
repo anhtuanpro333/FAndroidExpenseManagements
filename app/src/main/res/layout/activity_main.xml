@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    android:background="@color/Peach">
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/round_solid_coral"
+        android:layout_gravity="start|top"
+        android:layout_marginTop="-48dp"
+        android:fitsSystemWindows="true"
+        android:layout_marginStart="-108dp"/>
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/round_solid_coral"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="80dp"/>
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_solid_coral"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"/>
+
+    <View
+        android:layout_width="600dp"
+        android:layout_height="170dp"
+        android:background="@drawable/round_solid_apricot"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="-40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="50dp"
+        android:rotation="-5"
+        android:textColor="@color/Coral"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="230dp"
+        android:textColor="@color/Coral"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="our"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="50dp"
+        android:rotation="2"
+        android:textColor="@color/Coral"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="app"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="500dp"
+        android:layout_marginStart="280dp"
+        android:rotation="-3"
+        android:textColor="@color/Coral"/>
+
+</FrameLayout>
